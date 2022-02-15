@@ -7,9 +7,8 @@ terraform {
   }
 }
 
-/* backend "s3" {
-        bucket  = "prod-james-devsecops"
-        key     = "terraform/create-bucket-s3/prod-james-s3.tfstate"
-        region  = var.region
-    }
-} */
+backend "s3" {
+  bucket  = "james-devsecops"
+  key     = var.tfStateFile
+  region  = var.region
+}
