@@ -1,0 +1,16 @@
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform lockfile
+.terraform.lock.hcl
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Ignore Variables
+variables.tf
+*.tfvars
+
+# Ignore Policy.json
+*.json
