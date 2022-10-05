@@ -8,7 +8,7 @@ terraform {
 }
 
 backend "s3" {
-  bucket  = "james-devsecops"
+  bucket  = "CORP-devsecops"
   key     = var.tfStateFile
   region  = var.region
 }
